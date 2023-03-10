@@ -17,8 +17,24 @@ Distance -> 50
 Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
 #include <stdio.h>
+int main() 
+{
+	float x;
+	float y;
+	printf("Input total distance in km: ");
+	scanf("%f",&x); //get distance in hire//
+//check distance range//
+  if(x<=30)
+    {
+      y=x*50;
+    }
+  else
+  {
+    y=30*50+(x-30)*40;
+  }
 
-int main() {
-  
-  return 0;
-}
+//full amount display//
+
+  printf("\namount is:%.2f",y);
+return 0;
+  }
